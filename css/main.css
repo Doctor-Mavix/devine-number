@@ -1,0 +1,64 @@
+
+/*-------------- Nav  ----------------- */
+.digital{
+    font-family: 'digital-7';
+    letter-spacing: .3rem;
+}
+nav{
+    margin: 0 0 2rem;
+}
+nav span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+nav .row span:nth-child(2){
+    font-size: 2rem;
+
+    
+}
+#result p{
+    letter-spacing: .5rem;
+    font-family: comic sans ms;
+}
+#result span{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+/*---Modal -----*/
+.modals{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: none;
+}
+.modals .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.modals .content>div{
+    background: white;
+    border-radius: 5px;
+    width: 40%;
+    height: 40%;
+    color: black;
+}
+.modals .content>div h4{
+    margin: 2rem 0;
+}
+.modals .content>div p{
+    margin: 1rem 0 3rem;
+}
+.modals .content>div button{
+    padding: .7rem 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Mavix | Devine</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+     
+    </style>
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="black ">
+            <div class="nav-wrapper row">
+                <span  class=" col s4 center digital ">
+                    Score : <span id="score"></span>
+                </span>
+              <span class=" col s4 center digital" id="time"></span>
+              <span class=" col s4 center digital" >
+                  Meilleur score : <span id="best-score"></span>  
+              </span>
+              
+            </div>
+          </nav>
+    </header>
+
+    <div id="modal" class="modals">
+        <div class="content">
+            <div class="center">
+                <h4>Game Over</h4>
+                <p id="modal-score" class="">scores : 19pts</p>
+                <div>
+                    <button class="modal-btn black white-text" id="btn-modal">OK</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+ 
+    <div class="container">
+        
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+            <div class="card white darken-1">
+                <div class="card-content white-text">
+                <span class="card-title black-text">Devine un nombre entre 0-5</span>
+                <div class="input-field col s12">
+                    <div class="input-field col s12">
+                        <input  placeholder="Entrer un nombre" id="number" type="text" class="validate">
+                      </div>
+                  </div>
+                  
+                </div>
+                <br><br>
+                <div class="card-action center">
+                <button class="btn black" id="btn-submit">Deviner</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container center" id="result">
+
+    </div>
+ 
+    <script src="./js/app.js"></script>
+</body>
+</html>
